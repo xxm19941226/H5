@@ -1,0 +1,169 @@
+@charset "UTF-8";
+.init-loading{width: 100%;height: 100vh;position: fixed;left: 0;top: 0;z-index: 100;background: #000;color: #FFF;text-align: center;line-height: 100vh;font-size: 20px;}
+.body{width: 100%;height: 100vh;overflow: hidden;}
+// .pad{max-width: 8.28rem;max-height: 14.72rem;margin: 0 auto;}
+a{text-decoration:none;
+	&:link{text-decoration:none}
+	&:visited{text-decoration:none}
+	&:hover{text-decoration:none}
+	&:active{text-decoration:none}
+}
+.hide{display: none;}
+
+li {
+    list-style: none;
+}
+
+//animate
+.ixu-fadeOutUp-enter-active,.ixu-fadeOutUp-leave-active {
+  	animation-duration: 1s;
+  	animation-fill-mode: both;
+    animation-name: fadeOutUp;
+}
+
+.ixu-fadeOutUp-enter,.ixu-bounceOutUp-leave-to {
+    opacity: 0
+}
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+@-webkit-keyframes fadeInUp {
+	from {
+		-webkit-transform:translate3d(0, .1rem, 0);
+		transform:translate3d(0, .1rem, 0)
+	}
+	to {
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+}
+@keyframes fadeInUp {
+	from {
+		-webkit-transform:translate3d(0, .1rem, 0);
+		transform:translate3d(0, .1rem, 0)
+	}
+	to {
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+}
+@keyframes fadeInOut {
+	from {
+		opacity: 1
+	}
+	to {
+		opacity: 0
+	}
+}
+//箭头上下缓动效果
+.uphover {
+	animation:fadeInUp 1.5s alternate ease-in-out infinite;
+	-webkit-animation:fadeInUp 1.5s alternate ease-in-out infinite
+}
+
+//若隐若现效果
+.fade-hover{
+	animation:fadeInOut 1.2s alternate ease-in-out infinite;
+	-webkit-animation:fadeInOut 1.2s alternate ease-in-out infinite
+}
+.vux-fade-enter-active,.vux-fade-leave-active {
+    opacity: 1;
+    -webkit-transition: opacity .2s linear;
+    transition: opacity .2s linear
+}
+
+.vux-fade-enter,.vux-fade-leave-to {
+    opacity: 0
+}
+
+.vux-dialog-enter-active,.vux-dialog-leave-active {
+    opacity: 1;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+    -webkit-transform: translate(-50%,-50%) scale(1)!important;
+    transform: translate(-50%,-50%) scale(1)!important;
+    -webkit-transition-property: opacity,-webkit-transform!important;
+    transition-property: opacity,-webkit-transform!important;
+    transition-property: transform,opacity!important;
+    transition-property: transform,opacity,-webkit-transform!important
+}
+
+.vux-dialog-leave-active {
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s
+}
+
+.vux-dialog-enter {
+    opacity: 0;
+    -webkit-transform: translate(-50%,-50%) scale(1.185)!important;
+    transform: translate(-50%,-50%) scale(1.185)!important
+}
+
+.vux-dialog-leave-active {
+    opacity: 0;
+    -webkit-transform: translate(-50%,-50%) scale(.85)!important;
+    transform: translate(-50%,-50%) scale(.85)!important
+}
+
+.vux-mask-enter,.vux-mask-leave-active {
+    opacity: 0
+}
+
+.vux-mask-enter-active,.vux-mask-leave-active {
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s
+}
+
+.weui-toast {
+    top: 0!important;
+}
+
+.weui-icon_toast.weui-loading {
+    position: absolute;
+    margin: -19px 0 0 -19px!important;
+    left: 50%;
+    top: 26.3%;
+    // transform: translate(-50%, -50%);
+}
+
+.weui-mask, .weui-mask_transparent{
+    background: none!important;
+    display: none!important;
+}
+
+.weui-dialog__hd {
+    line-height: 0;
+    height: 50px;
+    padding: 0!important;
+}
+
+.weui-dialog__title {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 25px;
+}
+
+.vux-loading .weui-toast {
+    z-index: 100!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

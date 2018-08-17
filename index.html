@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0, minimum-scale=1.0" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="screen-orientation" content="portrait">
+	<meta name="browsermode" content="application">
+	<meta name="x5-orientation" content="portrait">
+	<meta name="x5-page-mode" content="app">
+</head>
+
+<body>
+	<div id="container">
+		<app></app>
+	</div>
+	<%=htmlWebpackPlugin.files.webpackManifest%>
+	<!-- <script src="https://cdn.gulugulu.cn/event/h5_release/public/jquery.min.js"></script> -->
+</body>
+
+</html>
