@@ -5,7 +5,7 @@ module.exports = function() {
 	for (var k in interfaces) {
 	    for (var k2 in interfaces[k]) {
 	        var address = interfaces[k][k2]
-	        if (address.family === 'IPv4' && !address.internal && (address.address.match(/192.168/g) || address.address.match(/172.16/g))) {
+	        if (address.family === 'IPv4' && !address.internal && (address.address.match(/192.168/g) || address.address.match(/172.16/g) || address.address.match(/10.3/g))) {
 	            addresses.push(address.address)
 	        }
 	    }
