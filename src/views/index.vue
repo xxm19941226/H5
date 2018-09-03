@@ -42,7 +42,7 @@ export default {
     methods: {
         getData() {
             this.show.loadingStatus = true
-            // this.$http.get('/Exchange/Info?token=' + this.$store.state.token).then((response) => { // 请求示例
+            // this.$http.get('/Exchange/Info?token=' + this.$store.state.token).then((response) => {
             //     console.log(response.data, 'response')
             //     response.data.data ? this.data = response.data.data : this.data = []
             //     if(response.data.code === 0) {
